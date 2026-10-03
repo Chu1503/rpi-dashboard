@@ -1,0 +1,12 @@
+Flask>=3.1,<4
+edge-tts==7.2.8
+google-auth>=2.40,<3
+google-auth-oauthlib>=1.2,<2
+msgpack>=1.1,<2
+miniaudio==1.71
+piper-tts==1.4.2
+python-dotenv>=1.1,<2
+requests>=2.32,<3
+tzdata==2026.3
+vosk==0.3.45
+waitress>=3.0,<4

@@ -1,0 +1,21 @@
+.env
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+node_modules/
+android-companion/.gradle/
+android-companion/**/build/
+android-companion/local.properties
+
+# OAuth client secrets, refresh tokens, and runtime state
+data/secrets/*
+!data/secrets/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+data/logs/
+data/run/
+data/voices/

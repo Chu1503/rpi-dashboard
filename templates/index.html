@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a32130">
+  <title>Alfred</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app/style.css') }}">
+  <script type="module" src="{{ url_for('static', filename='app/dashboard.js') }}"></script>
+</head>
+<body>
+  <div
+    id="root"
+    data-display-name="{{ display_name }}"
+    data-time-zone="{{ dashboard_time_zone }}"
+  >
+    <noscript>Alfred needs JavaScript enabled to update the dashboard.</noscript>
+  </div>
+</body>
+</html>

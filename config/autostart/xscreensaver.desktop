@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=XScreenSaver
+Exec=xscreensaver
+NoDisplay=true
+Hidden=true

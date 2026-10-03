@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alfred</string>
+    <string name="settings">Settings</string>
+    <string name="microphone">Ask Alfred with your voice</string>
+    <string name="toggle_tv_power">Toggle TV power</string>
+    <string name="send">Send to Alfred</string>
+    <string name="refresh_dashboard">Refresh TV dashboard</string>
+    <string name="scroll_dashboard">Scroll TV dashboard</string>
+</resources>

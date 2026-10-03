@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#a32130">
+  <title>Alfred Remote</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='remote.css') }}">
+  <script defer src="{{ url_for('static', filename='remote.js') }}"></script>
+</head>
+<body>
+  <main class="remote-shell">
+    <header>
+      <p class="eyebrow">ALFRED</p>
+      <h1>Remote</h1>
+      <div class="status-line">
+        <span id="bridge-dot" class="status-dot" aria-hidden="true"></span>
+        <span id="bridge-status">Connecting to the UNO Q…</span>
+      </div>
+    </header>
+
+    <section class="control-card" aria-label="TV power">
+      <button id="power-button" class="power-button" type="button" aria-label="Toggle TV power" title="Toggle TV power" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2v10M6.35 5.65a8 8 0 1 0 11.3 0" />
+        </svg>
+      </button>
+      <p class="warning">Sends the same Sony power-toggle signal as a physical remote.</p>
+      <div id="command-status" class="command-status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="voice-card" aria-labelledby="voice-title">
+      <h2 id="voice-title">Ask Alfred</h2>
+      <button id="voice-button" class="voice-button" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="9" y="3" width="6" height="11" rx="3" />
+          <path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6" />
+        </svg>
+        <span>Tap to speak</span>
+      </button>
+      <form id="voice-form" class="voice-form">
+        <label for="voice-command">Or type a question</label>
+        <div class="voice-entry">
+          <input id="voice-command" name="command" type="text" inputmode="text" autocomplete="off" placeholder="How does my day look?">
+          <button type="submit" aria-label="Send question">Enter</button>
+        </div>
+      </form>
+      <p id="voice-help" class="voice-help">The Android companion gives the most reliable microphone experience. In a browser, keyboard dictation is the fallback.</p>
+      <div id="assistant-answer" class="assistant-answer" role="status" aria-live="polite"></div>
+    </section>
+
+    <details class="settings-card">
+      <summary>Remote access key</summary>
+      <label for="remote-token">Enter the TV_REMOTE_TOKEN value from Alfred’s .env file</label>
+      <input id="remote-token" type="password" autocomplete="off" placeholder="Access key">
+      <button id="save-token" type="button">Save on this phone</button>
+    </details>
+  </main>
+</body>
+</html>

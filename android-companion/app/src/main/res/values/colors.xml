@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alfred_red">#A32130</color>
+    <color name="paper">#F1F0EB</color>
+    <color name="ink">#181818</color>
+    <color name="muted">#62605B</color>
+    <color name="lemon">#F3F9BD</color>
+    <color name="white">#FFFDF8</color>
+</resources>

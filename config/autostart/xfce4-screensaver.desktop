@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=XFCE Screensaver
+Exec=xfce4-screensaver
+NoDisplay=true
+Hidden=true

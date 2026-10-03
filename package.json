@@ -1,0 +1,21 @@
+{
+  "name": "alfred-dashboard-ui",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@vitejs/plugin-react": "6.1.0",
+    "postcss": "8.5.26",
+    "tailwindcss": "4.3.3",
+    "vite": "8.2.2"
+  }
+}

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Never Lock Display
+Exec=/home/arduino/.local/bin/never-lock-display.sh
+X-GNOME-Autostart-enabled=true

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Alfred is reachable only on the user's private LAN and authenticates every command. -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
